@@ -64,9 +64,20 @@ console.log(`Meu nome é ${nome}, tenho ${idade} anos, e o meu email é ${email}
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
-  let cor1 = azul
-  let cor2 = verde
-  let cor3= vermelho
+  let cor1 = prompt(`digite sua cor favorita`)
+  let cor2 = prompt(`digite sua outra cor favorita`)
+  let cor3 = prompt(`digite sua outra cor favorita`)
+
+  const cores = [cor1 , cor2 , cor3]
+
+  console.log(cores)
+
+
+
+
+
+
+
 
   
 
@@ -75,31 +86,36 @@ function imprimeTresCoresFavoritas() {
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
-  // implemente sua lógica aqui
+  return string.toUpperCase()
+console.log(string)
+
 
 }
 
-// EXERCÍCIO 07
+// EXERCÍCIO 7 
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  // implemente sua lógica aqui
+   const  x = custo/valorIngresso
+   return x
+  console.log(x)
 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
-
+ const igual = string1.length === string2.length
+return igual 
+console.log(igual)
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
+  return array [0]
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+  return array.pop()
 
 }
 
